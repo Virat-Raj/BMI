@@ -1,0 +1,22 @@
+body{
+    background-color: grey;
+}
+.main-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.height{
+    
+    margin-bottom: 15px;
+}
+.weight{
+    
+    margin-bottom: 15px;
+}
+button{
+    border-radius: 7px;
+    height: 30px;
+    width: 100px;
+}
