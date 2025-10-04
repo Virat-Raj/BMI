@@ -14,6 +14,15 @@ form.addEventListener('submit',function (e) {
     }else{
         let bmi = (weight/((height*height)/10000)).toFixed(2);
         // injecting the bmi 
-        result.innerHTML=`<span>${bmi}</span>`;
+         if(bmi<18.7){
+            result.innerHTML= `<span>${bmi} "UnderWeight"</span>`;
+        }
+        if(bmi>18.6 && bmi<25){
+            result.innerHTML= `<span>${bmi} "Normal"</span>`;
+        }else if(bmi>25){
+            result.innerHTML= `<span>${bmi} "Overwait"</span>`;
+        }
+       // result.innerHTML=`<span>${bmi}</span>`;
+        
     }
 });
